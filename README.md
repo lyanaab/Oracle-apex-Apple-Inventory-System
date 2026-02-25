@@ -175,7 +175,6 @@ It demonstrates:
 
 ---
 
-##  Author
-
-Developed by: **Lyana Mansour Abu Baker**  , **Omar Yousif Al-Hamdan** 
+##  Developed by:
+**Lyana Mansour Abu Baker**  , **Omar Yousif Al-Hamdan** 
 Oracle APEX & Database Systems Project
