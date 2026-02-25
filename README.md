@@ -1,136 +1,109 @@
 # 🍎 Apple Inventory System  
-### Enterprise Inventory & Order Management System – Oracle APEX
+### Enterprise Inventory & Order Management System  
+Built with Oracle APEX & Oracle Database
 
 ---
 
-## 📌 About The Application
+## 📌 Project Overview
 
-Apple Inventory System is a full-stack web application built using **Oracle APEX** to manage products, inventory, customers, and sales orders in a structured enterprise-style environment.
+Apple Inventory System is a full-featured enterprise-style web application developed using **Oracle APEX** and **Oracle Database**.
 
-The system simulates a real-world inventory and order management solution where administrators can:
+The system simulates a real-world inventory and sales management platform where administrators can manage products, customers, and multi-step sales orders within a structured relational database environment.
 
-- Manage product catalog and categories
-- Track stock levels in real time
-- Create multi-step sales orders
-- Monitor order statuses
-- Analyze sales and inventory performance
-- Manage admin users and internal notes
-- Integrate external exchange rate APIs
-
-This project demonstrates strong knowledge in:
+This project demonstrates practical implementation of:
 
 - Relational Database Design
-- Oracle SQL & PL/SQL
+- SQL & PL/SQL Programming
 - Oracle APEX Page Development
-- Business Logic Implementation
+- Business Logic Handling (APEX Processes)
+- Interactive Reports & Data Visualization
 - REST API Integration
-- Reporting & Data Visualization
+- Wizard-Based Workflow Implementation
 
 ---
 
-##  Application Features
+##  Tech Stack
+
+| Layer | Technology |
+|-------|------------|
+| Database | Oracle Database |
+| Backend Logic | PL/SQL |
+| Application Framework | Oracle APEX |
+| UI Components | Interactive Reports, Forms, Charts, Cards |
+| Integration | REST API (Exchange Rates) |
+
+---
+
+
+##  Core Features
 
 ###  Dashboard
-- Summary cards (products, orders, customers)
-- Status overview
-- System metrics
+- System overview metrics
+- Orders & products statistics
+- Quick navigation
 
-### Product Management
-- Products Report (Interactive Report)
-- Product Form (Create / Update / Delete)
-- Product Image Details
-- Products by Category View
+###  Product Management
+- Interactive Products Report
+- Product Form (CRUD operations)
+- Product image management
+- Products by category view
+- Real-time stock tracking
 
-### Category Management
-- Categories Report
-- Create New Category
+###  Category Management
+- Categories report
+- Add / Edit categories
 
-### Customer Management
-- Customers Report
-- Customer Form (CRUD Operations)
+###  Customer Management
+- Customers report
+- Customer form (Create / Update / Delete)
 
-### Order Management (Wizard-Based Flow)
+###  Order Management (Wizard-Based Flow)
 
-Multi-step order creation process:
+Multi-step enterprise order processing:
 
 1. Choose Customer  
-2. Add Items (Cart Logic)  
+2. Add Items (Cart logic using collection/session handling)  
 3. Review & Confirm  
 4. Finish & Update Order Status  
 
 Additional order features:
-- Order Details Page
-- Change Order Status
-- Status + Customer Filters
-- Date Range Filtering
+- Order details page
+- Change order status
+- Status filtering
+- Date range filtering
 
-### Analytics & Reports
-- Inventory Valuation
-- Orders Analysis
-- Category-based statistics
-- Date-based filtering
+###  Analytics & Reporting
+- Inventory valuation
+- Order analysis
+- Category-based insights
+- Dynamic filtering reports
 
-### Exchange Rates Integration
-- REST API integration
-- External currency data retrieval
+###  Exchange Rate Integration
+- REST API consumption
+- External currency rate retrieval
 
-### Security & Administration
-- Login Page
-- Admin Users Management
-- Internal Admin Notes
+###  Security & Administration
+- Login page
+- Admin users management
+- Internal admin notes system
 
 ---
 
-## 🗄️ Database Design
+## 🗄️ Database Architecture
 
-The system is built using a fully normalized relational schema with proper constraints and relationships.
+The system is built using a fully normalized relational schema with strict constraints and enforced relationships.
 
 ### Main Tables
 
-####  Categories
-- `category_id` (Primary Key)
-- `category_name` (Unique)
-- `description`
+- **Categories**
+- **Products**
+- **Customers**
+- **Orders**
+- **Order_Items**
+- **Admin_Users**
+- **Admin_Notes**
 
-####  Products
-- `product_id` (Primary Key)
-- `name`
-- `description`
-- `category_id` (Foreign Key → Categories)
-- `unit_price`
-- `stock_quantity`
-- `image_url`
-
-####  Customers
-- `customer_id` (Primary Key)
-- `name`
-- `email`
-- `phone`
-- `address`
-
-####  Orders
-- `order_id` (Primary Key)
-- `customer_id` (Foreign Key → Customers)
-- `order_date`
-- `status`
-- `total_amount`
-
-####  Order_Items
-- `order_item_id` (Primary Key)
-- `order_id` (Foreign Key → Orders)
-- `product_id` (Foreign Key → Products)
-- `quantity`
-- `unit_price`
-
-####  Admin_Users
-- Stores system administrators
-
-####  Admin_Notes
-- Stores internal system notes
-
----
-
-## 🔗 Relationships
+### Key Relationships
 
 - One Category → Many Products  
 - One Customer → Many Orders  
@@ -139,48 +112,50 @@ The system is built using a fully normalized relational schema with proper const
 
 All relationships are enforced using **Foreign Key Constraints**.
 
-No database triggers are used.  
-All business logic is implemented inside Oracle APEX processes.
+✔ Identity columns  
+✔ Check constraints  
+✔ Unique constraints  
+✔ No database triggers (Business logic handled inside APEX)
 
 ---
 
-## System Architecture
+## 🏗️ System Architecture
 
 ###  Database Layer
 - Relational schema
-- Identity columns
-- Check constraints
-- Foreign key enforcement
+- Data integrity enforcement
+- Seed data
 
 ###  Application Logic Layer
 - APEX Processes
 - PL/SQL blocks
 - Dynamic Actions
-- Session State management
+- Session state management
+- Wizard flow control
 
 ###  Presentation Layer
 - Interactive Reports
 - Forms
 - Wizard Pages
-- Cards
 - Charts
+- Cards
 - Filters
 
 ---
 
-## Project Structure
+##  Repository Structure
 
 | File | Description |
 |------|------------|
-| `database_Schema.sql` | Database tables, constraints, and seed data |
+| `database_Schema.sql` | Database schema + constraints + seed data |
 | `application_export.sql` | Full Oracle APEX application export |
 | `README.md` | Project documentation |
 
 ---
 
-## 🛠️ How to Run the Project
+##  How to Run
 
-1. Import `database_Schema.sql` into Oracle Database.
+1. Import `database_Schema.sql` into an Oracle Database schema.
 2. Import `application_export.sql` into Oracle APEX.
 3. Run the application from APEX App Builder.
 
@@ -188,5 +163,19 @@ All business logic is implemented inside Oracle APEX processes.
 
 ## 🎓 Academic Context
 
-Developed as part of a Database Systems and Oracle APEX academic project.  
-The system demonstrates enterprise-style database application development without using database triggers, keeping business logic inside the APEX layer.
+This project was developed as part of an advanced Database Systems and Oracle APEX academic course.
+
+It demonstrates:
+
+- Enterprise database design principles
+- Business logic implementation without triggers
+- Structured application architecture
+- Multi-step transactional workflows
+- Real-world database application development
+
+---
+
+##  Author
+
+Developed by: **Lyana Mansour Abu Baker**  , **Omar Yousof Al-Hamdan** 
+Oracle APEX & Database Systems Project
