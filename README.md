@@ -28,28 +28,28 @@ This project demonstrates strong knowledge in:
 
 ---
 
-## 🚀 Application Features
+##  Application Features
 
-### 📊 Dashboard
+###  Dashboard
 - Summary cards (products, orders, customers)
 - Status overview
 - System metrics
 
-### 📦 Product Management
+### Product Management
 - Products Report (Interactive Report)
 - Product Form (Create / Update / Delete)
 - Product Image Details
 - Products by Category View
 
-### 🗂️ Category Management
+### Category Management
 - Categories Report
 - Create New Category
 
-### 👥 Customer Management
+### Customer Management
 - Customers Report
 - Customer Form (CRUD Operations)
 
-### 🛒 Order Management (Wizard-Based Flow)
+### Order Management (Wizard-Based Flow)
 
 Multi-step order creation process:
 
@@ -64,17 +64,17 @@ Additional order features:
 - Status + Customer Filters
 - Date Range Filtering
 
-### 📈 Analytics & Reports
+### Analytics & Reports
 - Inventory Valuation
 - Orders Analysis
 - Category-based statistics
 - Date-based filtering
 
-### 🌍 Exchange Rates Integration
+### Exchange Rates Integration
 - REST API integration
 - External currency data retrieval
 
-### 🔐 Security & Administration
+### Security & Administration
 - Login Page
 - Admin Users Management
 - Internal Admin Notes
@@ -87,12 +87,12 @@ The system is built using a fully normalized relational schema with proper const
 
 ### Main Tables
 
-#### 1️⃣ Categories
+####  Categories
 - `category_id` (Primary Key)
 - `category_name` (Unique)
 - `description`
 
-#### 2️⃣ Products
+####  Products
 - `product_id` (Primary Key)
 - `name`
 - `description`
@@ -101,31 +101,31 @@ The system is built using a fully normalized relational schema with proper const
 - `stock_quantity`
 - `image_url`
 
-#### 3️⃣ Customers
+####  Customers
 - `customer_id` (Primary Key)
 - `name`
 - `email`
 - `phone`
 - `address`
 
-#### 4️⃣ Orders
+####  Orders
 - `order_id` (Primary Key)
 - `customer_id` (Foreign Key → Customers)
 - `order_date`
 - `status`
 - `total_amount`
 
-#### 5️⃣ Order_Items
+####  Order_Items
 - `order_item_id` (Primary Key)
 - `order_id` (Foreign Key → Orders)
 - `product_id` (Foreign Key → Products)
 - `quantity`
 - `unit_price`
 
-#### 6️⃣ Admin_Users
+####  Admin_Users
 - Stores system administrators
 
-#### 7️⃣ Admin_Notes
+####  Admin_Notes
 - Stores internal system notes
 
 ---
@@ -144,21 +144,21 @@ All business logic is implemented inside Oracle APEX processes.
 
 ---
 
-## 🏗️ System Architecture
+## System Architecture
 
-### 1️⃣ Database Layer
+###  Database Layer
 - Relational schema
 - Identity columns
 - Check constraints
 - Foreign key enforcement
 
-### 2️⃣ Application Logic Layer
+###  Application Logic Layer
 - APEX Processes
 - PL/SQL blocks
 - Dynamic Actions
 - Session State management
 
-### 3️⃣ Presentation Layer
+###  Presentation Layer
 - Interactive Reports
 - Forms
 - Wizard Pages
@@ -168,7 +168,7 @@ All business logic is implemented inside Oracle APEX processes.
 
 ---
 
-## 📂 Project Structure
+## Project Structure
 
 | File | Description |
 |------|------------|
