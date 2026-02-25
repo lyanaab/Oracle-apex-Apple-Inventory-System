@@ -1,4 +1,4 @@
-# 🍎 Apple Inventory System  
+#  Apple Inventory System  
 ### Enterprise Inventory & Order Management System  
 Built with Oracle APEX & Oracle Database
 
@@ -119,7 +119,7 @@ All relationships are enforced using **Foreign Key Constraints**.
 
 ---
 
-## 🏗️ System Architecture
+##  System Architecture
 
 ###  Database Layer
 - Relational schema
