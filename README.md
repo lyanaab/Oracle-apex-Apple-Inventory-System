@@ -160,6 +160,11 @@ All relationships are enforced using **Foreign Key Constraints**.
 3. Run the application from APEX App Builder.
 
 ---
+## 🎥 Watch Demo
+
+[![Watch the Demo](https://img.youtube.com/vi/f2_3mmgP-Kw/0.jpg)](https://www.youtube.com/watch?v=f2_3mmgP-Kw)
+
+---
 
 ## 🎓 Academic Context
 
