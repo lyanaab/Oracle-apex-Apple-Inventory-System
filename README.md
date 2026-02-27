@@ -160,9 +160,13 @@ All relationships are enforced using **Foreign Key Constraints**.
 3. Run the application from APEX App Builder.
 
 ---
-## 🎥 Watch Demo
+## 🎥 System Demonstration
 
-[![Watch the Demo](https://img.youtube.com/vi/f2_3mmgP-Kw/0.jpg)](https://www.youtube.com/watch?v=f2_3mmgP-Kw)
+A full walkthrough of the Apple Inventory System is available below:
+
+[![Apple Inventory System Demo](https://img.youtube.com/vi/f2_3mmgP-Kw/maxresdefault.jpg)](https://www.youtube.com/watch?v=f2_3mmgP-Kw)
+
+▶️ Click the image above to watch the full demo.
 
 ---
 
